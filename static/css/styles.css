@@ -1,0 +1,39 @@
+#portafolio{
+	padding: 1em;
+}
+
+.contenedor{
+	margin-top: 1em;
+	width:400px;
+	height:300px;
+	line-height:300px;
+	text-align:center;
+}
+
+.contenedor>span{
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+	font-size: 20px;
+}
+
+.contenedor>img{
+	position: absolute;
+	left: 0px;
+	opacity: 0;
+}
+
+.contenedor>img:hover{
+	transition: opacity 2s ease-in-out;
+	opacity: 1;	
+	pointer-events: stroke;
+	cursor: pointer;
+}
+
+#habilidades{
+	display: none;
+}
+
+#bigrafia{
+	display: none;
+}
