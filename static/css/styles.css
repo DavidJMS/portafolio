@@ -77,6 +77,10 @@ p{
 	cursor: pointer;
 }
 
+.imagenes{
+	margin: 1em;
+}
+
 #habilidades{
 	display: none;
 }
@@ -129,6 +133,9 @@ footer>div{
 	#carouseldark{
 		display: none;
 	}
+	#presentacion{
+		display: none;
+	}
 }
 
 @media screen and (min-width: 800px) {
@@ -136,6 +143,9 @@ footer>div{
 		display: none;
 	}
 	#backenddark{
+		display: none;
+	}
+	.imagenes{
 		display: none;
 	}
 }

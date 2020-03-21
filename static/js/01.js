@@ -23,20 +23,24 @@ $(document).ready(function(){
 		theme.attr("href","static/css/dark.css");
 		nav.attr("class","navbar navbar-expand-lg navbar-dark bg-dark");
 		footer.attr("class","bg-dark fixed-bottom");
-		dark.hide();
-		carouseldark.show();
-		light.show();
-		carousellight.hide();
+		if(window.innerWidth>800){
+			dark.hide();
+			carouseldark.show();
+			light.show();
+			carousellight.hide();	
+		}
 	});
 	light.click(function(){
 		theme.attr("href","static/css/light.css");
 		nav.attr("class","navbar navbar-expand-lg navbar-light bg-light");
 		footer.attr("class","bg-light fixed-bottom");
-		dark.hide();
-		carouseldark.hide();
-		light.hide();
-		carousellight.show();
-		dark.show();
+		if(window.innerWidth>800){
+			dark.hide();
+			carouseldark.hide();
+			light.hide();
+			carousellight.show();
+			dark.show();
+		}
 	});
 	linkbiagrafia.click(function(){
 		li3.attr("class","nav-item active");
