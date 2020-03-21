@@ -1,13 +1,60 @@
+body{
+	font-family:Helvetica,Arial;
+}
+
+h1,h2,span{
+	text-transform: uppercase;
+	font-size: 28px;
+	letter-spacing: 4px;
+}
+
+li,h3{
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+p{
+	font-size:16px;
+	line-height: 2em;
+}
+
 #portafolio{
 	padding: 1em;
 }
 
 .contenedor{
 	margin-top: 1em;
-	width:400px;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	width:300px;
 	height:300px;
 	line-height:300px;
 	text-align:center;
+}
+
+.contenedor div{
+	height:2px;
+	border-radius: 5em;
+	width: 100%;
+}
+
+.movetoright {
+  transition-property: background-color, color;
+  transition-duration: 5s;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 5s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 5s;
+  background-color: gray;
+}
+
+.movetoleft {  transition-property: background-color, color;
+  transition-duration: 5s;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 5s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 5s;
+  background-color: white;
 }
 
 .contenedor>span{
@@ -24,7 +71,7 @@
 }
 
 .contenedor>img:hover{
-	transition: opacity 2s ease-in-out;
+	transition: opacity 1s ease-in-out;
 	opacity: 1;	
 	pointer-events: stroke;
 	cursor: pointer;
@@ -34,15 +81,33 @@
 	display: none;
 }
 
-.imagenfalsa{
-	width: 100%;
-	height: 480px;
-	display: block;
-	background: pink;
+
+#carouseldark{
+	display: none;
+}
+
+#backendlight{
+	display: none;
+}
+
+#fronteddark{
+	display: none;
 }
 
 #biografia{
 	display: none;
+	padding: 1em;
+}
+
+#biografia div{
+	min-width: 325px;
+	margin: auto;
+}
+
+#biografia img{
+	width: 300px;
+	height: 400px;
+	border-radius: 1em;
 }
 
 footer{
@@ -55,4 +120,22 @@ footer{
 
 footer>div{
 	padding-top:1em;
+}
+
+@media screen and (max-width: 800px) {
+	#carousellight{
+		display:none;
+	}
+	#carouseldark{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#frontedlight{
+		display: none;
+	}
+	#backenddark{
+		display: none;
+	}
 }
